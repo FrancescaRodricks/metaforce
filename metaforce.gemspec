@@ -25,7 +25,7 @@ EOL
     s.files += Dir['bundle/ruby/*/gems/**/*'] + ['bundle/load.rb']
   else
     s.add_dependency 'savon', '~> 1.2.0'
-    s.add_dependency 'rubyzip', '~> 1.0'
+    s.add_dependency 'rubyzip', '>= 1', '< 3'
     s.add_dependency 'activesupport'
     s.add_dependency 'hashie', '~> 1.2.0'
     s.add_dependency 'thor', '~> 0.16.0'
